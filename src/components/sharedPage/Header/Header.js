@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { BsSearch, BsCart } from "react-icons/bs";
@@ -23,10 +23,42 @@ const Header = () => {
                             <NavLink className='navbar-link' to="/megaMenu">
                                 Mega Menu
                                 <ul className='categories-dropdown'>
-                                    <div>
+                                    <div className='categories-left-container'>
                                         <li><NavLink className='navbar-link' to="/phone">Accessibility</NavLink></li>
                                         <li><NavLink className='navbar-link' to="">Android & Dev</NavLink></li>
                                         <li><NavLink className='navbar-link' to="">Designs</NavLink></li>
+                                        <li><NavLink className='navbar-link' to="">Tech & Review</NavLink></li>
+                                        <li><NavLink className='navbar-link' to="">Creative</NavLink></li>
+                                    </div>
+                                    <div className='categories-right-container'>
+                                        <div className='post-container'>
+                                            <div className='post-content'>
+                                                <img className='category-img' src="http://axilthemes.com/themes/blogar/wp-content/uploads/2021/01/demo_image-1-600x338.jpg" alt="" />
+                                                <p className='category-name'>Technology</p>
+                                                <p className='category-post-tile'>Beauty of deep space. Billions of galaxies in</p>
+                                            </div>
+                                        </div>
+                                        <div className='post-container'>
+                                            <div className='post-content'>
+                                                <img className='category-img' src="http://axilthemes.com/themes/blogar/wp-content/uploads/2021/01/demo_image-13-390x260.jpg" alt="" />
+                                                <p className='category-name'>Technology</p>
+                                                <p className='category-post-tile'>Rocket Lab mission fails shortly after launch</p>
+                                            </div>
+                                        </div>
+                                        <div className='post-container'>
+                                            <div className='post-content'>
+                                                <img className='category-img' src="http://axilthemes.com/themes/blogar/wp-content/uploads/2021/01/demo_image-14-390x260.jpg" alt="" />
+                                                <p className='category-name'>Technology</p>
+                                                <p className='category-post-tile'>The Morning After: Uber sets its sights on Postmates</p>
+                                            </div>
+                                        </div>
+                                        <div className='post-container'>
+                                            <div className='post-content'>
+                                                <img className='category-img' src="http://axilthemes.com/themes/blogar/wp-content/uploads/2021/01/demo_image-12-390x260.jpg" alt="" />
+                                                <p className='category-name'>Technology</p>
+                                                <p className='category-post-tile'>Virtual Reality or Artificial Intelligence Technology</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </ul>
                             </NavLink>

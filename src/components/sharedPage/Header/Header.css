@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    padding: 12px 0;
+    padding: 2px 0;
 }
 .logo{
     width: 140px;
@@ -42,16 +42,17 @@
     box-shadow: 0px 1px 10px -7px rgba(0,0,0,0.9);
     position: absolute;
     top: 107%;
-    left: -200%;
+    left: -250%;
     padding-left: 0px;
-    width: 1100px;
+    width: 1200px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
+    display: flex;
 }
-.categories-dropdown > div{
+.categories-left-container{
     width: 17%;
     height: 100%;
     padding: 25px 25px 25px 10px;
@@ -61,6 +62,50 @@
     list-style: none;
     margin-bottom: 15px;
     padding-left: 0;
+}
+.categories-right-container{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.post-container{
+    width: 280px;
+    padding: 23px 10px 10px 10px;
+}
+.post-container:hover .category-post-tile::after{
+    width: 100%;
+}
+.post-container img{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+}
+.category-name{
+    font-size: 14px;
+    color: #FF2638;
+    margin: 13px 0 10px 0;
+}
+.category-post-tile{
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    transform: 0.3s;
+    text-decoration: underline;
+}
+.category-post-tile::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: -3.5px;
+    transition: 0.3s;
 }
 
 /* Navbar right style */

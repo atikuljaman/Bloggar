@@ -6,19 +6,20 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import Home from './components/Home/Home/Home';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
       <Router>
+        <Header />
         <Switch>
           <Route path="/">
-            <Header />
+            <Home />
           </Route>
           <Route path="/home">
-            <Header />
+            <Home />
           </Route>
         </Switch>
       </Router>

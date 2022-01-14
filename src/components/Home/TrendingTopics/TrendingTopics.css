@@ -1,0 +1,29 @@
+.trending-topic-container{
+    padding: 40px 0 20px 0;
+}
+.trending-topic-title{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.trending-topic-content{
+    width: 183px;
+    height: 179px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.trending-topic-name{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.trending-topic-img{
+    width: 183px;
+    height: 179px;
+    border-radius: 10px;
+}
